@@ -10,6 +10,8 @@ class Kernel extends ConsoleKernel
     /**
      * The Artisan commands provided by your application.
      *
+     * Un cop afegida la comanda, per poder ser emprada has d'executar la comanda <php artisan cache:clear>.
+     *
      * @var array
      */
     protected $commands = [
