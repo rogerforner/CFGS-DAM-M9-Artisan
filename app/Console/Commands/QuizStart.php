@@ -4,6 +4,12 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+/**
+ * Class QuizStart
+ * Es correspòn a la comanda: php artisan quiz:start
+ *
+ * @package App\Console\Commands
+ */
 class QuizStart extends Command
 {
     /**
@@ -37,6 +43,10 @@ class QuizStart extends Command
      */
     public function handle()
     {
-        //
+        $this->line("Simple text.");
+        $this->info("Informació...");
+        $this->comment("Un comentari");
+        $this->question("Una pregunta?");
+        $this->error("Error! A veure si l'arregles :3");
     }
 }
